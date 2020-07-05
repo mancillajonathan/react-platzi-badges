@@ -4,16 +4,13 @@
   background: url('../../images/stars.svg'), #1b1b25;
   background-repeat: repeat;
   color: #ffffff;
+  padding-top: 40px;
 }
 
 .Home__logoConf {
-  display: block;
-  width: 600px;
-  margin: auto;
+  width: 250px;
 }
 
 .Home__image {
-  display: block;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 500px;
 }
