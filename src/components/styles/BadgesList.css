@@ -5,3 +5,7 @@
     border-radius: 2px;
     margin: 10px;
 }
+
+.BadgesList__image {
+    border-radius: 50px;
+}

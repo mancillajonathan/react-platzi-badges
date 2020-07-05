@@ -11,10 +11,10 @@ class BadgesList extends React.Component {
               <div className='container pt-2'>
                 <div className='row'>
                   <div className='col-2'>
-                    <img src={badge.avatarUrl} alt='pic' />
+                    <img className="BadgesList__image" src={badge.avatarUrl} alt='pic' />
                   </div>
                   <div className='col-10'>
-                    <p className="font-weight-bold">
+                    <p className="font-weight-bold mb-0">
                       {badge.firstName}
                       {badge.lastName}
                     </p>
