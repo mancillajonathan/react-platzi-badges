@@ -18,7 +18,7 @@ class BadgesList extends React.Component {
                       {badge.firstName}
                       {badge.lastName}
                     </p>
-                    <a href='#'>@{badge.github}</a>
+                    <a href='https://github.com'>@{badge.github}</a>
                     <p>{badge.jobTitle}</p>
                   </div>
                 </div>

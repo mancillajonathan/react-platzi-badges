@@ -4,9 +4,8 @@ import {Link} from 'react-router-dom';
 import confLogo from '../images/badge-header.svg';
 import './styles/Badges.css';
 
-import BadgeForm from '../components/BadgeForm';
 import BadgesList from '../components/BadgesList';
-import Badge from '../components/Badge';
+
 
 
 class Badges extends React.Component {
