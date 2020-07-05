@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/BadgesList.css';
 
 class BadgesList extends React.Component {
   render() {
@@ -6,11 +7,22 @@ class BadgesList extends React.Component {
       <ul className='list-unstyled'>
         {this.props.badges.map((badge) => {
           return (
-            <li key={badge.id}>
-              <p>
-                {badge.firstName}
-                {badge.lastName}
-              </p>
+            <li key={badge.id} className='BadgesList__list'>
+              <div className='container pt-2'>
+                <div className='row'>
+                  <div className='col-2'>
+                    <img src={badge.avatarUrl} alt='pic' />
+                  </div>
+                  <div className='col-10'>
+                    <p className="font-weight-bold">
+                      {badge.firstName}
+                      {badge.lastName}
+                    </p>
+                    <a href='#'>@{badge.github}</a>
+                    <p>{badge.jobTitle}</p>
+                  </div>
+                </div>
+              </div>
             </li>
           );
         })}
