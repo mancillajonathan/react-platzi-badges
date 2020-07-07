@@ -22,8 +22,6 @@ export class BadgeForm extends Component {
   render() {
     return (
       <div>
-        <h1>New Attendant</h1>
-
         <form onSubmit={this.props.onSubmit}>
           <div className='form-group'>
             <label>First name</label>

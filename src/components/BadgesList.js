@@ -20,6 +20,7 @@ class BadgesList extends React.Component {
         {this.props.badges.map((badge) => {
           return (
             <li key={badge.id} className='BadgesList__list'>
+              <Link className='text-reset text-decoration-none' to={`/badges/${badge.id}/edit`}>
               <div className='container pt-2'>
                 <div className='row'>
                   <div className='col-2'>
@@ -39,6 +40,7 @@ class BadgesList extends React.Component {
                   </div>
                 </div>
               </div>
+              </Link>
             </li>
           );
         })}
