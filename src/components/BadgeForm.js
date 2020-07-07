@@ -13,18 +13,20 @@ export class BadgeForm extends Component {
     console.log('Button was clicked!');
   };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Form was submitted');
-    console.log(this.props.formValues);
-  };
+
+
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.log('Form was submitted');
+  //   console.log(this.props.formValues);
+  // };
 
   render() {
     return (
       <div>
         <h1>New Attendant</h1>
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.props.onSubmit}>
           <div className='form-group'>
             <label>First name</label>
             <input
@@ -64,8 +66,8 @@ export class BadgeForm extends Component {
               onChange={this.props.onChange}
               className='form-control'
               type='text'
-              name='jobtitle'
-              value={this.props.formValues.jobtitle}
+              name='jobTitle'
+              value={this.props.formValues.jobTitle}
             />
           </div>
 
@@ -75,8 +77,8 @@ export class BadgeForm extends Component {
               onChange={this.props.onChange}
               className='form-control'
               type='text'
-              name='github'
-              value={this.props.formValues.github}
+              name='twitter'
+              value={this.props.formValues.twitter}
             />
           </div>
 

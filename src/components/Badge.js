@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Badge.css';
 import confLogo from '../images/badge-header.svg';
+import Gravatar from './Gravatar';
 
 class Badge extends React.Component {
   render() {
@@ -11,10 +12,10 @@ class Badge extends React.Component {
         </div>
 
         <div className='Badge__section-name'>
-          <img
-            className='Badge__avatar'
-            src={this.props.avatar}
-            alt='Avatar'
+          <Gravatar 
+            className='Badge__avatar' 
+            email={this.props.email}
+            alt='Avatar' 
           />
           <h1>
             {this.props.firstName} <br /> {this.props.lastName}
@@ -23,7 +24,11 @@ class Badge extends React.Component {
 
         <div className='Badge__section-info'>
           <h3>{this.props.jobTitle}</h3>
-          <div><a href="https://github.com/mancillajonathan" target="blank">@{this.props.github}</a></div>
+          <div>
+            <a href='https://twitter.com/' target='blank'>
+              @{this.props.github}
+            </a>
+          </div>
         </div>
 
         <div className='Badge__footer'>#platziconf</div>
