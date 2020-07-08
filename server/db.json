@@ -1,13 +1,21 @@
 {
   "badges": [
     {
-      "firstName": "Richard",
+      "firstName": "Jonathan",
       "lastName": "Kaufman López",
-      "email": "richardbkaufman@gmail.com",
+      "email": "jarmancillaportillo@gmail.com",
       "avatarUrl": "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon",
       "jobTitle": "Frontend Engineer @ Kickass Partners",
       "twitter": "sparragus",
       "id": "EYR2BVQ"
+    },
+    {
+      "firstName": "David",
+      "lastName": "Leal",
+      "email": "davidleal@mail.com",
+      "jobTitle": "Backend Developer",
+      "twitter": "leal13",
+      "id": "_6LEgii"
     }
   ]
 }
