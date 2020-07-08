@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import confLogo from '../images/logo-conf.svg';
 import './styles/BadgeDetails.css';
 import Badge from '../components/Badge';
+import DeleteBadgeModal from '../components/DeleteBadgeModal';
 
 function BadgeDetails(props) {
-    const badge = props.badge;
+  const badge = props.badge;
   return (
     <div>
       <div className='BadgeDetails__hero'>
@@ -48,7 +49,17 @@ function BadgeDetails(props) {
                 </Link>
               </div>
               <div className=''>
-                <div className='btn btn-danger font-weight-bold'>Delete</div>
+                <button
+                  onClick={props.onOpenModal}
+                  className='btn btn-danger font-weight-bold'
+                >
+                  Delete
+                </button>
+                <DeleteBadgeModal
+                  isOpen={props.modalIsOpen}
+                  onClose={props.onCloseModal}
+                  onDeleteBadge={props.onDeleteBadge}
+                />
               </div>
             </div>
           </div>
