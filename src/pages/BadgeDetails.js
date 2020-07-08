@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import confLogo from '../images/logo-conf.svg';
 import './styles/BadgeDetails.css';
 import Badge from '../components/Badge';
 import DeleteBadgeModal from '../components/DeleteBadgeModal';
 
+function useIncreaseCount(max) {
+  const [count, setCount] = useState(0);
+
+  if (count > max) {
+    setCount(0);
+  }
+  return [count, setCount];
+}
+
 function BadgeDetails(props) {
+  // const [state, setstate] = useState(initialState)
+  const [count, setCount] = useIncreaseCount(5);
   const badge = props.badge;
   return (
     <div>
@@ -41,6 +52,14 @@ function BadgeDetails(props) {
             <h2 className='font-weight-bold'>Actions</h2>
             <div className=''>
               <div className='mb-3'>
+                <button
+                  onClick={() => {
+                    setCount(count + 1);
+                  }}
+                  className='btn btn-primary mr-4'
+                >
+                  Counter: {count}
+                </button>
                 <Link
                   className='btn btn-primary font-weight-bold'
                   to={`/badges/${badge.id} /edit`}
