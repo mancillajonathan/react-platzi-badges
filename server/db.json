@@ -16,6 +16,14 @@
       "jobTitle": "Backend Developer",
       "twitter": "leal13",
       "id": "_6LEgii"
+    },
+    {
+      "firstName": "Rick",
+      "lastName": "Sanchez",
+      "email": "rick.sanchez@mail.com",
+      "jobTitle": "Scientist",
+      "twitter": "github.com/rick.san",
+      "id": "2ILnFU1"
     }
   ]
 }
